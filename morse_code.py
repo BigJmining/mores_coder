@@ -67,7 +67,7 @@ def zzz():
     g.output(pin, 0)
 
 
-#mainloop
+#mainloop- set for while but coulds be a single run
 def main():
     try:
         while 1:
