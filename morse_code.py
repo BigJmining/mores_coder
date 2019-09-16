@@ -77,14 +77,21 @@ def main():
             # ask for message
             print('\n\tEnter word for Mores Code Translation')
             tap = input('\t[ctrl- C to exit]\n\n\tMessage >>> ')
-            
+            tap = tap.lower()
+
             # change message into a list
             what_to_tap = list(tap)
 
             for x in what_to_tap:
                 # look up value for key of letter in message
-                tapping = letter[str(x)]
+                try:
+                    tapping = letter[str(x)]
                 
+                # catch punctuation use errors
+                except KeyError:
+                    print('\tOOPs... no punctuation allowed') #yet
+                    tapping = ' '
+
                 # create a list of each lettres m_code value
                 message.append(tapping)
                 
