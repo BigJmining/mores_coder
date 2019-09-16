@@ -70,7 +70,6 @@ def zzz():
 
 def main():
     try:
-        print(letter)
         while 1:
             # message list
             message = []
