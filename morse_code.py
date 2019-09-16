@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # by Jason Lohrey
 
-## Mores code translator. Takes a audio device hooked to gpio pin of raspberrypi
+## Morse code translator. Takes a audio device hooked to gpio pin of raspberrypi
 ## and allowes user to enter in letters / numbers / words and outputs an audio
-## mores code translation
+## morse code translation
 
 
 from time import sleep
@@ -17,7 +17,7 @@ g.setwarnings(False)
 pin = 26
 g.setup(pin,g.OUT)
 
-## mores code dict, s - short ; l - long.
+## morse code dict, s - short ; l - long.
 letter = {
             ' ':' ',
             'a':'sl',
@@ -75,7 +75,7 @@ def main():
             message = []
             
             # ask for message
-            print('\n\tEnter word for Mores Code Translation')
+            print('\n\tEnter word for Morse Code Translation')
             tap = input('\t[ctrl- C to exit]\n\n\tMessage >>> ')
             tap = tap.lower()
 
