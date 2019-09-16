@@ -67,9 +67,10 @@ def zzz():
     g.output(pin, 0)
 
 
-#mainloop- set for while but coulds be a single run
+
 def main():
     try:
+        print(letter)
         while 1:
             # message list
             message = []
@@ -90,20 +91,20 @@ def main():
                 
                 # play each character in message
                 for character in message: 
-                    for letter in character:
-                        if letter == 's':
+                    for letters in character:
+                        if letters == 's':
                             chirp()
                             sleep(0.09)
                             zzz()
                             sleep(0.09)
                         
-                        elif letter == 'l':
+                        elif letters == 'l':
                             chirp()
                             sleep(.25)
                             zzz()
                             sleep(0.09)
                         
-                        elif letter != ' ':
+                        elif letters != ' ':
                             chirp()
                             sleep(0.09)
                             zzz()
