@@ -67,7 +67,7 @@ def zzz():
     g.output(pin, 0)
 
 
-
+#mainloop
 def main():
     try:
         while 1:
